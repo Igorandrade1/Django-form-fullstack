@@ -1,0 +1,120 @@
+* {font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+table, th, td {
+    font-size: 15px;
+    border:  1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+position: relative;
+top: 80px;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TituloPagina {
+    font-size: 45px;
+    background-color: rgb(214, 238, 1);
+    color: rgb(0, 0, 0);
+}
+
+.cabecalho-tabela {
+    background-color: rgb(214, 238, 1);
+    color: rgb(0, 0, 0);
+}
+
+.nome, .Sexo  {
+    padding: 10px;
+}
+
+
+td {
+    padding: 15px;
+    width: 4px;
+    
+}
+
+.item {
+    padding: 50px;
+}
+
+.container_campos {
+    flex-direction: row;
+    font-size: 30px;
+    width: 100%;
+    position:relative;
+
+    
+}
+
+.container_campos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.campos {
+    margin-bottom: 20px;
+
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(214, 238, 1);
+
+}
+
+
+.button_cadastrar {
+    position: relative;
+    top: 400px;
+    right: 500px;
+}
+
+.button_cadastrar {
+    font-size: 30px;
+}
+
+
+
+.remocao {
+    font-size: 30px;
+    position: relative;
+    left: 350px;
+    top: 150px;
+
+}
+
+
+.btn-primary {
+   font-size: 30px;
+   border-radius: 10%;
+   padding: 10px;
+   position: relative;
+   top: 150px;
+   left: 620px;
+}
+
+

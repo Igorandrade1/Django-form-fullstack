@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Página de Cadastro
+{% endblock title %}
+
+{% block TituloPagina%}
+Formulário de Cadastro
+{% endblock TituloPagina %}
+
+
+{% block content %}
+
+<div class="container_campos">  
+<form action="" method="post">
+    {% csrf_token %}  
+    <div class="campos">
+        <label for="nome">Nome</label>
+        <input type="text" maxlength="50" name="nome" id="nome" value="{{ form.nome.value|default:''}} ">
+    </div>
+    <div  class="campos">
+        <label for="email">Email</label>
+        <input type="email" maxlength="100" name="email" id="email" value="{{ form.email.value|default:''}}">
+    </div>
+    <div  class="campos">
+        <label for="sexo">Sexo</label>
+        <input type="text" maxlength="1" name="sexo" id="sexo" value="{{ form.sexo.value|default:''}}">
+    </div>
+    <div  class="campos">
+        <label for="endereco">Endereco</label>
+        <input type="text" maxlength="150" name="endereco" id="endereco" value="{{ form.endereco.value|default:''}}" >
+    </div>
+    <div  class="campos">
+        <label for="cpf">Cpf</label>
+        <input type="number" name="cpf" id="cpf" value="{{ form.cpf.value|default:''}}">
+    </div>
+    <button type="submit" class="btn btn-primary">
+        Salvar
+    </button>
+    
+</form>
+</div>
+
+
+{% endblock content %}
