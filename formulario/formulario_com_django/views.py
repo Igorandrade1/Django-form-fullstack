@@ -1,9 +1,31 @@
 from django.shortcuts import get_object_or_404, redirect, render
 from django.forms import ModelForm
 from .models import *
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth import authenticate, login, logout
 
 
 # Create your views here.
+
+@login_required(login_url='/login/')
+def logout_user(request):
+    if request.POST:
+        logout(request)
+        return redirect('login')
+    return render(request, 'logout.html')
+
+
+def login_user(request):
+    print('estou em login user')
+    if request.POST:
+        print('cheguei aqui')
+        usuario = request.POST.get("usuario")
+        senha = request.POST.get("senha")
+        usuario_authentic = authenticate(username=usuario, password=senha)
+        if usuario_authentic is not None:
+            login(request, usuario_authentic)
+            return redirect('lista_pessoas')
+    return render(request, 'login.html')
 
 
 class Formulario_Cadastro(ModelForm):
@@ -12,12 +34,14 @@ class Formulario_Cadastro(ModelForm):
         fields = ['nome', 'email', 'sexo', 'endereco', 'cpf']
 
 
+@login_required(login_url='/login/')
 def lista_pessoas(request, template_name='lista_pessoas.html'):
     Cadastro = Formulario.objects.all()
     cadastrados = {'lista': Cadastro}
     return render(request, template_name, cadastrados)
 
 
+@login_required(login_url='/login/')
 def cadastro(request, template_name='cadastro_pessoas.html'):
     form = Formulario_Cadastro(request.POST or None)
     if form.is_valid():
@@ -26,9 +50,9 @@ def cadastro(request, template_name='cadastro_pessoas.html'):
     return render(request, template_name, {'form': form})
 
 
+@login_required(login_url='/login/')
 def editar_cadastro(request, pk, template_name='cadastro_pessoas.html'):
     pessoa = get_object_or_404(Formulario, pk=pk)
-    print('chegou aqui', pessoa.email)
     if request.method == "POST":
         form = Formulario_Cadastro(request.POST, instance=pessoa)
         print('cheguei aqui no if ')
@@ -36,12 +60,13 @@ def editar_cadastro(request, pk, template_name='cadastro_pessoas.html'):
             pessoa = form.save()
             return redirect('lista_pessoas')
     else:
-        print('cheguei aqui no else')
+
         form = Formulario_Cadastro(request.POST or None, instance=pessoa)
     return render(request, template_name, {'form': form})
 
 
-def remover_pessoa(request,pk):
+@login_required(login_url='/login/')
+def remover_pessoa(request, pk):
     pessoa = Formulario.objects.get(pk=pk)
     if request.method == "POST":
         pessoa.delete()

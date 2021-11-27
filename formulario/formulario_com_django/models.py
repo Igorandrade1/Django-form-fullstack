@@ -11,8 +11,3 @@ class Formulario(models.Model):
     cpf = models.IntegerField()
 
 
-
-
-
-
-

@@ -1,0 +1,52 @@
+* { padding: 0; margin: 0; box-sizing: border-box; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+
+}
+
+header:hover {
+    color:rgb(214, 238, 1);
+}
+
+.container-button {
+    
+    
+}
+
+.button-logout {
+    margin-top: 250px;
+    padding: 20px;
+    text-align: center;
+
+}
+
+
+.button-logout {
+    font-size: 30px;
+    border-radius: 3%;
+    background-color: black;
+    color: white;
+}
+
+.button-logout:hover {
+    color: rgb(214, 238, 1);
+}
+
+container-img {
+    
+}
+
+div img {
+    position: relative;
+    left: 1000px;
+    top: 200px;
+    
+    
+}

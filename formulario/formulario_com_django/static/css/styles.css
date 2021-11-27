@@ -113,8 +113,19 @@ header {
    border-radius: 10%;
    padding: 10px;
    position: relative;
-   top: 150px;
-   left: 620px;
+
+
+}
+
+.button_logout{
+    position: relative;
+    top: 400px;
+    right: 450px;
+    font-size: 30px;
 }
 
 
+.btn-cancelar {
+    position: relative;
+    top: 185px;
+}

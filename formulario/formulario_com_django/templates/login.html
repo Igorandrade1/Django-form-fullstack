@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de login</title>
+</head>
+<body>
+<h1> Login </h1>
+
+<form method="post" action="submit">{% csrf_token %}
+    <div class="container-login">
+        <label for="id_usuario">Usuario</label>
+        <input type="text" placeholder="Digite seu usuario" maxlength="50" required name="usuario" id="id_usuario">
+        <label for="id_senha">Senha</label>
+        <input type="password" placeholder="Digite sua senha" required id="id_senha" name="senha">
+        <button type="submit"> Entrar </button>
+    </div>
+</form>
+
+
+
+</body>
+</html>
