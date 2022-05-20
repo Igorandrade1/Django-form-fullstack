@@ -44,9 +44,27 @@ container-img {
 }
 
 div img {
-    position: relative;
-    left: 1000px;
-    top: 200px;
+    position: absolute;
+    left: 547px;
+    top: 150px;
     
     
+}
+
+
+.button-cancelar {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;}
+
+
+.button-cancelar {
+    font-size: 30px;
+    border-radius: 3%;
+    background-color: black;
+    color: white;
+}
+
+.button-cancelar:hover {
+    color: rgb(214, 238, 1);
 }

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-Remoção de livros
+    Remoção de livros
 {% endblock title %}
 
 {% block TituloPagina%}
@@ -15,7 +15,7 @@ Remoção de livros
     {% csrf_token %}
     <h4 class="remocao"> Tem certeza que deseja deletar esse cadastro? "{{pessoa.nome}}"?</h4>
     <br/>
-<button type="submit" class="btn btn-primary">
+<button type="submit" class="btn btn-primary btn-deletar">
     Deletar
 </button>
 

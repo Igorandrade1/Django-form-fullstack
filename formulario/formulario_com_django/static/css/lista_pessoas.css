@@ -1,0 +1,111 @@
+body {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5em;
+    font-weight: 400;
+    background: rgba(81, 40, 141);
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #000;
+    width: 100%;
+}
+
+
+caption {
+
+    border-bottom: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 10px;
+}
+
+td {
+    padding: 1rem 1.2rem;
+    text-align: center;
+    
+   
+}
+
+tr {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #a39e9e;
+}
+
+td:nth-child(even) {
+    
+    border-bottom: 1px solid #a5a5a5;
+}
+
+tr:hover {
+    background-color: #FF0;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+
+}
+
+
+th {
+    background-color: #2196f3;
+    color:  #fff;
+    font-size: 1.1em;
+    padding: 8px;
+}
+
+th:hover {
+    background-color: #2196f3;
+    border-bottom: 5px solid #03a9f4;
+   
+}
+
+
+tfoot tr {
+    background-color: #dcdcdc;
+    
+}
+
+
+tfoot tr:hover {
+    background-color: rgba(81,40, 141, 0.9);
+    box-shadow: 0px 10px 4px rgb(32, 16, 74);
+    border: none;
+    color: #fff;
+
+    
+}
+
+
+div#container {
+    overflow-x: auto;
+}
+
+
+tfoot td {
+    background-color: #2196f3;
+    color:  #fff;
+    font-size: 1.1em;
+    padding: 8px;
+    
+}
+
+
+
+button {  
+    border: none;
+    background-color: #2196f3;
+    font-size: 1.1em;
+    color:  #fff;
+    padding: 1px;
+  
+   
+   
+}
+
+
+tfoot td:hover {
+    background-color: #2196f3;
+    border-bottom: 5px solid #03a9f4;
+   
+}
+

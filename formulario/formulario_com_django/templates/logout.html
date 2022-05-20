@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -21,8 +20,14 @@
    <div class="container-button" align="center">
        <button  class="button-logout" type="submit"> Tem certeza que desejar sair? </button>
    </div>
-</form>
 
+
+</form>
+  <div class="container-button-cancelar" align="center">
+         <a href="{% url  'lista_pessoas' %}">
+            <button  class="button-cancelar" type="submit"> Cancelar </button>
+         </a>
+   </div>
 
 
 </body>

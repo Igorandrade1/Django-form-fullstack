@@ -1,0 +1,352 @@
+body {
+ margin:0;
+ padding:0;
+ /* background-color: rgba(39, 194, 0, 0.842); */
+ background-image: linear-gradient(to right, #1CE6B0, #15B389);
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+.container-loginform{
+background-color: white;
+position: relative;
+max-width: 310px;
+left: 460px;
+top: 140px;
+display:flex;
+flex-direction: column;
+align-items: center;
+border: 1px solid black;
+border-radius: 5%;
+
+
+}
+
+.container-login {
+display:flex;
+flex-direction: column;
+align-items: center;
+
+
+
+
+}
+
+.container-loginform>h1 {
+text-align: center;
+position: relative;
+left: 5px;
+
+
+
+}
+
+
+
+.usuario {
+position: relative;
+padding-bottom: 20px;
+
+
+}
+
+.usuario>label {
+    margin-right: 5px;
+}
+
+.usuario>input {
+   padding: 10px 20px;
+
+
+}
+
+.senha {
+padding-bottom: 20px;
+}
+
+.senha>label {
+    margin-right: 10px;
+}
+
+.senha>input {
+padding: 10px 20px;
+}
+
+.container-login>button {
+position: relative;
+margin-bottom: 20px;
+padding: 5px 10px;
+left: 7px;
+}
+
+
+/* telas maiores */
+@media screen  and (min-width: 1400px){
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        max-width: 310px;
+        left: 700px;
+        top: 200px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+    }
+
+   
+}
+
+
+
+/* IPAD */
+
+@media screen and (max-width: 820px) and (max-height:1180px) {
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: 255px;
+        top: 230px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+
+}
+
+
+@media screen and (max-width: 563px){
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+    
+}
+
+
+
+/* celular */
+/* @media screen and (max-width: 360px ) and (max-height: 740px) {
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: px;
+        top: 230px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+    
+} */
+
+/*  celuar tb */
+/* @media screen and (max-width: 375px) and (max-height: 667px) {
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: 35px;
+        top: 190px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+    
+} */
+
+/* celular tb */
+/* @media screen and (max-width: 414px) and (max-height: 896px){
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: 52px;
+        top: 250px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+    
+    
+} */
+
+/* @media screen and (max-width:563px ) and (max-height:811px ) {
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: 140px;
+        top: 250px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+}
+ */
+
+
+/* @media screen and (max-width: 479px) and (max-height: 811px){
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: 8px;
+        top: 250px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+}
+
+@media screen and (max-width: 449px) and (max-height: 811px) {
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: 50px;
+        top: 250px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+}
+
+
+@media screen and (max-width: 460px) and (max-height: 789px) {
+    .container-loginform>h1 {
+        text-align: center;
+        position: relative;
+        left: 5px;
+        
+        
+    }
+
+    .container-loginform{
+        background-color: white;
+        position: relative;
+        left: 73px;
+        top: 250px;
+        max-width: 310px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 5%;
+        
+        
+        
+    }
+} */

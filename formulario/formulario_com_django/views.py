@@ -10,6 +10,7 @@ from django.contrib.auth import authenticate, login, logout
 @login_required(login_url='/login/')
 def logout_user(request):
     if request.POST:
+        print("estou aqui no logout")
         logout(request)
         return redirect('login')
     return render(request, 'logout.html')
@@ -55,7 +56,6 @@ def editar_cadastro(request, pk, template_name='cadastro_pessoas.html'):
     pessoa = get_object_or_404(Formulario, pk=pk)
     if request.method == "POST":
         form = Formulario_Cadastro(request.POST, instance=pessoa)
-        print('cheguei aqui no if ')
         if form.is_valid():
             pessoa = form.save()
             return redirect('lista_pessoas')
@@ -68,9 +68,10 @@ def editar_cadastro(request, pk, template_name='cadastro_pessoas.html'):
 @login_required(login_url='/login/')
 def remover_pessoa(request, pk):
     pessoa = Formulario.objects.get(pk=pk)
-    if request.method == "POST":
+    if request.POST:
         pessoa.delete()
-        redirect('lista_pessoas')
-    render(request, 'livro_delete.html', {'pessoa': pessoa})
+        return redirect('lista_pessoas')
 
-    render(request, 'livro_delete.html', {'pessoa': pessoa})
+    return render(request, 'pessoa_delete.html', {'pessoa': pessoa})
+
+    #render(request, 'pessoa_delete.html', {'pessoa': pessoa})
