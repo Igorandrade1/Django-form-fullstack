@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/form_cadastro_pessoas.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
     <title>Formulario de cadastro</title>
 </head>
 <body>
@@ -42,13 +43,16 @@
 
             </div>
             <div>
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" class="btn btn-primary btn-salvar">
                     Salvar
                 </button>
-                <a href="{% url 'lista_pessoas' %}">
-                    <button  class="btn-cancelar btn btn-primary"> Cancelar </button>
+                
+                <a class="btn-cancelar btn btn-primary" href="{% url 'lista_pessoas' %}"> Cancelar 
+                   
                 </a>
             </div>
+           
+            
         </form>
     </div>  
   
