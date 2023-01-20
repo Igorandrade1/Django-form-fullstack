@@ -25,4 +25,20 @@ Hope you like what you think, this is the famous CRUD  (CREATE, READ, UPDATE, E 
 Check out my other projects, there's a lot of cool stuff here!
 
 
+technologies used:
+Django Web Framework
+Django Function based views
+Django Models e Django Object-relational mapper (ORM)
+Django Templates e Template Tags
+Django URLs
+Django Authentication System 
+Django HTTP 
+Django Staticfiles
+Django Forms
+Django Forms 
+HTML e CSS
+SQL
+
 BYE!!
+
+
